@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>ieducate-Best online education portal</title>
+        <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+    color: rgb(185, 182, 185);
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+    width:30%
+}
+.secondhalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 41px;
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 20px;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family:'ubuntu',sans-serif;
+    padding: 10px;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 65px;
+}
+.sectiontag{
+    padding: 16px 0;
+}
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.contact{
+    background-color: #f6f5f4;
+    height: 833px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 35px;
+}
+.form{
+max-width: 62%;
+margin: 25px auto;
+}
+.form-input{
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'ubuntu',sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: rgb(184, 25, 25);
+    height: 4px;
+    margin: 5px 3px;
+}
+        
+        
+        
+@media only screen and (max-width: 1088px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search{
+        width: 100%;
+    }
+    .burger{
+    display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras {
+    padding: 0px;
+}
+}
+        </style>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#contact">contact us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">The Future of Education Is Here</p>
+                <p class="text-small">In this world of 7 billion people we try to educte all of them.we try to make the
+                    future of education best by providing best education across the whole world.we are proud to say that
+                    the future of education is here</p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Videos</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="https://images.unsplash.com/photo-1585247226801-bc613c441316?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" alt="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectiontag text-big">The end of your search is here</p>
+            <p class="sectionsubtag text-small">Education can be thought of as the transmission of the values and
+                accumulated knowledge of a society. In this sense, it is equivalent to what social scientists term
+                socialization or enculturation. Children—whether conceived among New Guinea tribespeople, the
+                Renaissance Florentines, or the middle classes of Manhattan—are born without culture. .</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/collection/190727/900x900/?coding,apple" alt="laptop img">
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectiontag text-big">Let's grow together</p>
+            <p class="sectionsubtag text-small">As society becomes ever more complex and schools become ever more
+                institutionalized, educational experience becomes less directly related to daily life, less a matter of
+                showing and learning in the context of the workaday world, and more abstracted from practice, more a
+                matter of distilling, telling, and learning things out of context.</p>
+            <p class="sectionsubtag text-small">This concentration of learning in a formal atmosphere allows children to
+                learn far more of their culture than they are able to do by merely observing and imitating.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/collection/190727/900x900/?happy,nature" alt="">
+        </div>
+    </section>
+    <form action="back" method=post>
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter your name" class="form-input">
+            <input type="text" name="phone" id="phone" placeholder="enter your phone" class="form-input">
+            <input type="text" name="email" id="email" placeholder="enter your email" class="form-input">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="your concern"
+                class="form-input"></textarea>
+            <input type="submit" class="btn btn-sm btn-dark"></input>
+        </div>
+    </section>
+    </form>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2020 -www.iedon.com - All rights reserved
+        </p>
+    </footer>
+   
+</body>
+
+</html>
